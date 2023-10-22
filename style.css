@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*pongo efecto al pasar de seccion a seccion*/
+html{
+    scroll-behavior: smooth;
+}
+/*distribuyo tamaños de cada seccion*/
+header{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    position: fixed;
+
+}
+/*Acomodo Logo*/
+.logo img{
+    width: 50%
+}
+
+/*Dentro del Nav*/
+nav{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    margin-top: 1em;;
+}
+#burguer{
+    display: none;
+}
+body{
+    background-color: #000;
+}
+ul{
+    list-style: none;
+    display: flex;
+
+}
+ul:hover a:hover{
+    background: black;
+    color: whitesmoke;
+    opacity: 0.9;
+}
+li a{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 6px 4px 4px black;
+    padding: 10px 40px; 
+    display: inline-block; 
+    text-decoration: none; 
+    color: black;
+    margin-left: 1em;
+
+}
+li:hover a::before{
+    color: black;
+    background: whitesmoke;
+    left: 0;
+    transition:.2s all;
+}
+a{
+    transition: .5s;
+}
+/*TERMINO NAV*/
+
+#modelx{
+    height: 1000px;
+    background: url(images/fondo1.jpg) ;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+/* ORDENO Y RELLENO DESCRIPCION MOD1*/
+#prim{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #AAAAA8;
+}
+article .parraf1{
+    margin-left: 2em;
+    padding: 1em 1em;
+    background: whitesmoke;
+    width: fit-content;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    box-shadow: 6px 4px 4px black;
+}
+.parraf1 p{
+    color: #000;
+}
+figure{
+    mix-blend-mode: multiply;
+    flex-grow: 2;
+}
+figure img{
+    width: 100%;
+}
+#modely {
+    height: 1000px;
+    background: url(images/fondo2.jpg) #000;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+/* ORDENO Y RELLENO DESCRIPCION MOD2*/
+#segund{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 800px;
+    background: url(images/fondo2b.jpg) ;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.parraf2{
+    grid-area: 2/3/2/3;
+    color: aliceblue;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+#modelz {
+    height: 1000px;
+    background-image: url(images/fondo3.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+#terc{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background: #000;
+}
+article p {
+    color: aliceblue;
+}
+.typeo{
+    grid-area: 1/1;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5em;
+}
+.typet{
+    grid-area: 2/2;
+    display: flex;
+    align-items: center;
+    padding-right: 1.5em;
+}
+.imago{
+    grid-area: 1/2;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-right: 1em;
+}
+.imgt{
+    grid-area: 2/1;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-left: 1em;
+}
+.imago img, .imgt img{
+    height: 100%;
+    width: 100%;
+}
+#Z{
+    background-color: #000;
+    color: aliceblue;
+    margin: 0%;
+    padding: 0%;
+    padding-left: 1em;
+}
+/*LE DOY ESTILO AL FOOTER Y AL FORM DE BOOSTRAP*/
+footer{
+    /*background: #000;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 0;
+
+}
+#contact{
+    
+    color: black;
+    width: 30%;
+    margin-left: 3%;
+    padding-bottom: 3%;
+}
+#map{
+    background-color: aliceblue;
+    width: 100%;
+    height: 500px;
+
+}
+#maps{
+    padding-top: 10%;
+    border-radius: 10px;
+}
+@media screen and (max-width: 800px ){
+    nav{
+        display: grid;
+    }
+    ul{
+      list-style: none;
+      display: flex;
+  
+  }
+  ul:hover a:hover{
+      background: black;
+      color: whitesmoke;
+      opacity: 0.9;
+  }
+  li a{
+      text-decoration: none;
+      border: 2px solid black;
+      border-radius: 20px;
+      box-shadow: 6px 4px 4px black;
+      padding: 5px 20px; 
+      display: inline-block; 
+      text-decoration: none; 
+      color: black;
+      margin-left: 1em;
+  
+  }
+  li:hover a::before{
+      color: black;
+      background: whitesmoke;
+      left: 0;
+      transition:.2s all;
+  }
+  a{
+      transition: .5s;
+  }
+    header{
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+        position: fixed;
+      }
+      
+      /*Acomodo Logo*/
+      .logo img{
+        width: 100%;
+      }
+      body{
+        background-color: #000;
+      }
+
+      #modelx{
+        height: 500px;
+        background: url(images/fondo1.jpg) ;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      
+      /* ORDENO Y RELLENO DESCRIPCION MOD1*/
+      #prim{
+        background: #AAAAA8;
+        display: flex;
+        flex-direction: column;
+      }
+      article .parraf1{
+        margin-left: 0.2em;
+        background: whitesmoke;
+        width: fit-content;
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        box-shadow: 6px 4px 4px black;
+      }
+      .parraf1 p{
+        color: #000;
+      }
+      figure{
+        mix-blend-mode: multiply;
+        flex-grow: 2;
+      }
+      figure img{
+        width: 100%;
+      }
+      #modely {
+        height: 500px;
+        background: url(images/fondo2.jpg) #000;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      
+      /* ORDENO Y RELLENO DESCRIPCION MOD2*/
+      #segund{
+        height: 400px;
+        background: url(images/fondo2b.jpg) ;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      .parraf2 p{
+        width: 600px;
+      }
+      #modelz {
+        height: 500px;
+        background-image: url(images/fondo3.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      #terc{
+        display: grid;
+        gap: 2em;
+      }
+      footer{
+        /*background: #000;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        z-index: 0;
+    
+    }
+    #contact{
+        
+        color:black;
+        width: 30%;
+        margin-left: 3%;
+        padding-bottom: 3%;
+    }
+    #map{
+        background-color: aliceblue;
+        width: 100%;
+        height: 500px;
+    
+    }
+    #maps{
+        padding-top: 10%;
+        border-radius: 10px;
+    }
+  }
