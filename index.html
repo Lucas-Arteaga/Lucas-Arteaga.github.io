@@ -9,6 +9,7 @@
     <!-- CDN Boostrap para linkear Css y Js. Form del footer, Carrusel y nav de @media-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -96,7 +97,7 @@
         <footer id="cont">
             <div id="contact">
                 <h2> Contact</h2>
-                <form>
+                <form id="consulta">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -106,10 +107,10 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
                       <!--Como mi Boostrap le falta Boton se lo Agrego pero manteniendo el formato de boostrap asi me lo levanta con el mismo estilo-->
-                      <button type="submit" class="btn btn-primary">Send</button>
-
-                    </form> 
-                </form>
+                      <button type="submit" class="btn btn-primary" id="submit-btn">Send</button>
+                    </div>
+                </form> 
+            
             </div>
             <div id="Map">
                 <figure id="maps">
@@ -119,6 +120,7 @@
             </div>
 
         </footer>
+        <script src="script.js"></script>
     
 
     
