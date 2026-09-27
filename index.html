@@ -1,128 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Landing page</title>
-    <!-- CDN Boostrap para linkear Css y Js. Form del footer, Carrusel y nav de @media-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucas Arteaga — Petroleum Engineering · O&amp;G Data &amp; Automation</title>
+<meta name="description" content="Petroleum Engineering student at UBA and Technical Contract Analyst at Valbol Worcester. API 6A/6D compliance, well and production data, Python, SQL and automation. Certified in OpenWells, Data Analyzer and PROFILE.">
+<meta name="author" content="Lucas Arteaga">
+<meta name="theme-color" content="#0a0e14">
+<link rel="canonical" href="https://lucas-arteaga.github.io/">
+<meta name="robots" content="index, follow">
 
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Lucas Arteaga">
+<meta property="og:title" content="Lucas Arteaga — Petroleum Engineering · O&amp;G Data &amp; Automation">
+<meta property="og:description" content="API 6A/6D compliance, well and production data, and automation. 270 certified hours. A project awarded a special mention by Fundación Sadosky &amp; Fundación YPF.">
+<meta property="og:url" content="https://lucas-arteaga.github.io/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0e14'/%3E%3Cpath d='M6 9h5l7 14 7-14h2' fill='none' stroke='%23f5b544' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Lucas Arteaga",
+  "alternateName": "Lucas Ariel Arteaga",
+  "jobTitle": "Technical Contract Analyst & Expeditor",
+  "worksFor": { "@type": "Organization", "name": "Valbol Worcester" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Buenos Aires" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR" },
+  "knowsAbout": ["Petroleum Engineering", "API 6A", "API 6D", "ASME B16.34", "Production Data Analytics", "Machine Learning", "Python", "SQL", "OpenWells"],
+  "url": "https://lucas-arteaga.github.io/",
+  "sameAs": ["https://www.linkedin.com/in/lucas-arteaga-/", "https://github.com/Lucas-Arteaga"],
+  "email": "mailto:larteaga@fi.uba.ar"
+}
+</script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo Tesla">
-        </div>    
-    
-        <nav>
-            <ul id="models">
-                <li><a href="#modelx">Model X</a></li>
-                <li><a href="#modely">Model Y</a></li>
-                <li><a href="#modelz">Model Z</a></li>
-            </ul>
-            <ul id="menu">
-                <li><a href="#terc">About Us</a></li>
-                <li><a href="#cont">Contact</a></li>
-            </ul>           
-        </nav>
-    </header>
-    <div class="modelx">    
-        <section id="modelx">
 
-        </section>
-        <section>
-            <article id="prim">                
-                <div class="parraf1">
-                    <h2>Model X</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quis, perspiciatis pariatur deleniti aliquid quae praesentium? Tenetur quisquam cumque voluptate eius consequatur. Iste accusamus qui harum eos dolores molestias, doloribus, eius quod aliquam nemo earum vero! Optio iste explicabo, voluptas fuga accusamus sapiente! Reprehenderit, voluptatem. Tenetur cum doloribus ullam omnis.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem harum, laboriosam beatae possimus ipsam at ratione velit et molestiae non quibusdam eveniet libero? Voluptatibus aspernatur aperiam non, blanditiis ratione sit facere ipsam delectus suscipit veniam dolor excepturi quibusdam nostrum voluptatem, magnam obcaecati id distinctio saepe esse voluptas mollitia nemo.
-                    </p>
-                </div>
-                <figure>
-                    <img src="images/fondo1c.jpg" alt="Esqueleto Auto">
-                </figure>
-            </article>
-        </section>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Lucas Arteaga — home">
+    <span class="brand-mark" aria-hidden="true">LA</span>
+    <span class="brand-text">Lucas Arteaga</span>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#work" data-lang-only="en">Work</a>
+    <a href="#work" data-lang-only="es">Proyectos</a>
+    <a href="#certifications" data-lang-only="en">Certifications</a>
+    <a href="#certifications" data-lang-only="es">Certificaciones</a>
+    <a href="#how" data-lang-only="en">How I work</a>
+    <a href="#how" data-lang-only="es">Cómo trabajo</a>
+    <a href="#contact" data-lang-only="en">Contact</a>
+    <a href="#contact" data-lang-only="es">Contacto</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang-set="en" class="is-active">EN</button>
+    <button type="button" data-lang-set="es">ES</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" data-lang-only="en">Buenos Aires, Argentina · open to relocate to Neuquén</p>
+      <p class="eyebrow" data-lang-only="es">Buenos Aires, Argentina · con disponibilidad de relocalización a Neuquén</p>
+
+      <h1>Lucas Arteaga</h1>
+
+      <p class="role" data-lang-only="en">Petroleum Engineering @ UBA · Technical Contract Analyst &amp; Expeditor @ Valbol Worcester</p>
+      <p class="role" data-lang-only="es">Ingeniería en Petróleo @ UBA · Technical Contract Analyst &amp; Expeditor @ Valbol Worcester</p>
+
+      <blockquote class="creed" data-lang-only="en">I understand the economics behind every technical decision — and I optimize operating flows with data.</blockquote>
+      <blockquote class="creed" data-lang-only="es">Entiendo el impacto económico detrás de cada decisión técnica, y optimizo los flujos operativos con datos.</blockquote>
+
+      <p class="lede" data-lang-only="en">I review engineering specifications for a living. I know what a deviation costs once it reaches the shop floor — so I catch it on the data sheet, and I automate everything around that check.</p>
+      <p class="lede" data-lang-only="es">Reviso especificaciones de ingeniería para vivir. Sé cuánto cuesta una desviación cuando ya llegó al taller — por eso la detecto en el data sheet, y automatizo todo lo que rodea ese control.</p>
+
+      <div class="cta">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/lucas-arteaga-/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Lucas-Arteaga" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:larteaga@fi.uba.ar" data-lang-only="en">Email me</a>
+        <a class="btn" href="mailto:larteaga@fi.uba.ar" data-lang-only="es">Escribime</a>
+      </div>
     </div>
-        
-        <section id="modely">
 
+    <div class="hero-viz" aria-hidden="true">
+      <svg class="decline" viewBox="0 0 420 300" preserveAspectRatio="xMidYMid meet" role="presentation">
+        <defs>
+          <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f5b544" stop-opacity="0.28"/>
+            <stop offset="100%" stop-color="#f5b544" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#ffd98a"/>
+            <stop offset="100%" stop-color="#f5b544"/>
+          </linearGradient>
+        </defs>
 
-        </section>
-        <section>
-            <article id="segund">
-                <div class="parraf2">
-                    <h2>Model Y</h2>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque a exercitationem quasi quis cumque aspernatur, dolores consequatur nisi hic voluptatibus ab quaerat laboriosam eos omnis quas dicta repellat possimus. Explicabo, provident adipisci numquam itaque, quae autem accusamus eveniet suscipit aliquam atque iure porro eum veritatis similique ratione quaerat minus ullam aspernatur minima at beatae. Sunt cupiditate nostrum fuga quis earum. Reiciendis cupiditate non maiores sequi perferendis iste ad itaque provident fugit recusandae quae dignissimos perspiciatis velit voluptatem maxime blanditiis rerum, ullam error sapiente placeat debitis? Consequatur adipisci pariatur cupiditate laborum veritatis reiciendis dolores nesciunt itaque vel eius earum asperiores maxime eos et error iure sit quia sequi, autem ea id ab animi. Molestiae, ullam. Excepturi, unde similique. Asperiores quos quam omnis magni veniam! Dolores beatae repellendus laboriosam nisi laudantium reiciendis asperiores, deserunt optio odit veniam! Fuga, ea aut! Repellat nisi esse animi sequi similique perspiciatis nesciunt dolorem officiis culpa.
-                    </p>
-                </div>
-            </article>           
-        </section>
-        
-        <section id="modelz">
+        <g class="grid">
+          <line x1="40" y1="40"  x2="400" y2="40"/>
+          <line x1="40" y1="90"  x2="400" y2="90"/>
+          <line x1="40" y1="140" x2="400" y2="140"/>
+          <line x1="40" y1="190" x2="400" y2="190"/>
+          <line x1="40" y1="240" x2="400" y2="240"/>
+          <line x1="40" y1="40"  x2="40"  y2="240"/>
+          <line x1="130" y1="40" x2="130" y2="240"/>
+          <line x1="220" y1="40" x2="220" y2="240"/>
+          <line x1="310" y1="40" x2="310" y2="240"/>
+          <line x1="400" y1="40" x2="400" y2="240"/>
+        </g>
 
-        </section>
-        <h2 id="Z">Model Z</h2>
-        <article id="terc">
-            <div class="typeo">
+        <path class="area" fill="url(#fill)"
+              d="M40 62 C 92 78, 128 120, 172 152 C 216 182, 258 202, 310 216 C 344 225, 372 231, 400 235 L400 240 L40 240 Z"/>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus aperiam et temporibus fugiat accusamus dignissimos fugit ex aliquam itaque, neque saepe numquam non iste voluptas! Ducimus, est. Repellat optio atque sit repellendus molestias reiciendis ipsa dolor, dolores ipsam autem dolorum! Est iusto asperiores sed voluptatem pariatur. Illum architecto ad laboriosam explicabo alias modi omnis quod ab, mollitia fugiat accusamus odio ex asperiores provident voluptatem! Qui consectetur assumenda, cupiditate magni obcaecati, molestiae natus maiores rerum quo ut consequuntur libero eligendi quaerat.
-                    lorem100
-                </p>
-            </div>
-            <div class="typet">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corrupti temporibus explicabo, ut fugiat optio quasi facilis omnis aperiam, exercitationem sapiente cum voluptatum officia porro incidunt facere voluptatem error. Voluptates iure blanditiis itaque deserunt aliquid illo, cum tempora architecto ex quis iste incidunt deleniti exercitationem natus unde in placeat, quo recusandae hic cupiditate molestiae. Quisquam reprehenderit ducimus saepe, aperiam veritatis perspiciatis sit necessitatibus laborum voluptas voluptates recusandae nostrum ut molestiae officia natus? Nostrum magni nulla eaque rerum officiis pariatur laudantium?
-                </p>
-            </div>
-            <div class="imago">
-                <img src="images/fondo3b.jpg" alt="Pantalla Tactil">
-            </div>
-            <div class="imgt">
-                <img src="images/fondo3c.jpg" alt="Cargador de Celular">
-            </div>
-        </article>
-        
-        <section id="us">
+        <path class="line l1" fill="none" stroke="url(#stroke)" stroke-width="3" stroke-linecap="round"
+              d="M40 62 C 92 78, 128 120, 172 152 C 216 182, 258 202, 310 216 C 344 225, 372 231, 400 235"/>
 
+        <path class="line l2" fill="none" stroke="#4cc9f0" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 5" opacity="0.75"
+              d="M40 110 C 96 124, 134 156, 178 180 C 222 202, 262 216, 312 226 C 346 232, 372 236, 400 238"/>
 
-        </section>
-        <footer id="cont">
-            <div id="contact">
-                <h2> Contact</h2>
-                <form id="consulta">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                      <!--Como mi Boostrap le falta Boton se lo Agrego pero manteniendo el formato de boostrap asi me lo levanta con el mismo estilo-->
-                      <button type="submit" class="btn btn-primary" id="submit-btn">Send</button>
-                    </div>
-                </form> 
-            
-            </div>
-            <div id="Map">
-                <figure id="maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52514.937168354474!2d-58.588269351367224!3d-34.65006659999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9139d744afd%3A0x30392657a71dfb77!2sTesla%20Automotive%20Electronics!5e0!3m2!1ses!2sar!4v1697946539322!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </figure>
+        <circle class="dot" cx="40" cy="62" r="4.5" fill="#ffd98a"/>
+      </svg>
 
-            </div>
+      <div class="viz-legend">
+        <span><i class="sw sw-a"></i><span data-lang-only="en">oil rate</span><span data-lang-only="es">caudal de petróleo</span></span>
+        <span><i class="sw sw-b"></i><span data-lang-only="en">projection</span><span data-lang-only="es">proyección</span></span>
+      </div>
+      <p class="viz-note" data-lang-only="en">Decline curve — the shape every production decision is built on.</p>
+      <p class="viz-note" data-lang-only="es">Curva de declinación — la forma sobre la que se construye cada decisión de producción.</p>
+    </div>
+  </div>
+</section>
 
-        </footer>
-        <script src="script.js"></script>
-    
+<!-- ============================ METRICS ============================ -->
+<section class="metrics" aria-label="Key figures">
+  <div class="metric"><span class="num" data-count="270">0</span><span class="lbl" data-lang-only="en">certified hours</span><span class="lbl" data-lang-only="es">horas certificadas</span></div>
+  <div class="metric"><span class="num" data-count="174815" data-format="plain">0</span><span class="lbl" data-lang-only="en">well-month records processed</span><span class="lbl" data-lang-only="es">registros pozo-mes procesados</span></div>
+  <div class="metric"><span class="num" data-count="125018" data-format="plain">0</span><span class="lbl" data-lang-only="en">kept after documented cleaning</span><span class="lbl" data-lang-only="es">conservados tras limpieza documentada</span></div>
+  <div class="metric"><span class="num" data-count="5">0</span><span class="lbl" data-lang-only="en">models compared under 5-fold CV</span><span class="lbl" data-lang-only="es">modelos comparados con CV de 5 folds</span></div>
+</section>
 
-    
+<!-- ============================ WHAT I DO ============================ -->
+<section class="section" id="what">
+  <h2><span data-lang-only="en">What I do</span><span data-lang-only="es">Qué hago</span></h2>
+  <p class="section-lede" data-lang-only="en">Fifth-year Petroleum Engineering student at Universidad de Buenos Aires, working full time at an API valve manufacturer that supplies upstream operators.</p>
+  <p class="section-lede" data-lang-only="es">Estudiante de quinto año de Ingeniería en Petróleo (UBA), trabajando a tiempo completo en un fabricante de válvulas API que provee a operadoras de Upstream.</p>
+
+  <div class="cards">
+    <article class="card">
+      <h3 data-lang-only="en">Technical compliance</h3><h3 data-lang-only="es">Cumplimiento técnico</h3>
+      <p data-lang-only="en">Review and validate engineering documentation for ball, control, butterfly and retention valves against API 6D, API 6A, ASME B16.34, ASME B16.5 and ASTM — catching data sheet deviations before manufacturing starts.</p>
+      <p data-lang-only="es">Reviso y valido documentación de ingeniería de válvulas esféricas, de control, mariposa y retención bajo API 6D, API 6A, ASME B16.34, ASME B16.5 y ASTM — detectando desvíos antes de que arranque la fabricación.</p>
+    </article>
+    <article class="card">
+      <h3 data-lang-only="en">Expediting &amp; delivery risk</h3><h3 data-lang-only="es">Expediting y riesgo de entrega</h3>
+      <p data-lang-only="en">Coordinate critical deliveries with the shop floor, anticipate blockers, and report status to operators with numbers instead of optimism.</p>
+      <p data-lang-only="es">Coordino entregas críticas con planta, anticipo bloqueos y reporto estado a las operadoras con números, no con optimismo.</p>
+    </article>
+    <article class="card">
+      <h3 data-lang-only="en">Well &amp; production data</h3><h3 data-lang-only="es">Datos de pozo y producción</h3>
+      <p data-lang-only="en">Certified in OpenWells, Data Analyzer and PROFILE (Halliburton Landmark). Production analytics, GOR/RGP modelling, well KPIs, reservoir characterization.</p>
+      <p data-lang-only="es">Certificado en OpenWells, Data Analyzer y PROFILE (Halliburton Landmark). Analítica de producción, modelado de RGP/GOR, KPIs de pozo, caracterización de reservorios.</p>
+    </article>
+    <article class="card">
+      <h3 data-lang-only="en">Automation &amp; AI</h3><h3 data-lang-only="es">Automatización e IA</h3>
+      <p data-lang-only="en">Python and SQL pipelines, scikit-learn models, n8n workflows, API integrations, Docker. Certified in AI Automation, advanced level.</p>
+      <p data-lang-only="es">Pipelines en Python y SQL, modelos con scikit-learn, flujos en n8n, integración de APIs, Docker. Certificado en AI Automation, nivel avanzado.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============================ WORK ============================ -->
+<section class="section" id="work">
+  <h2><span data-lang-only="en">Selected work</span><span data-lang-only="es">Trabajo seleccionado</span></h2>
+
+  <article class="feature">
+    <div class="feature-head">
+      <span class="badge badge-gold" data-lang-only="en">Special mention</span>
+      <span class="badge badge-gold" data-lang-only="es">Mención especial</span>
+      <span class="badge" data-lang-only="en">Fundación Sadosky &amp; Fundación YPF · 2025</span>
+      <span class="badge" data-lang-only="es">Fundación Sadosky &amp; Fundación YPF · 2025</span>
+    </div>
+    <h3 data-lang-only="en">Comparison of regression models for GOR prediction</h3>
+    <h3 data-lang-only="es">Comparación de modelos de regresión para la predicción de RGP</h3>
+
+    <p data-lang-only="en">Processed 174,815 well-month records and kept 125,018 after applying a documented cleaning policy — 48,533 rows were non-physical, with zero or negative production. The target was heavily skewed, so it was log-transformed before modelling. Five models were compared under 5-fold cross-validation: a linear baseline, decision trees at two depths, and random forests at two sizes.</p>
+    <p data-lang-only="es">Procesé 174.815 registros pozo-mes y conservé 125.018 aplicando una política de limpieza documentada — 48.533 filas eran no físicas, con producción cero o negativa. El target tenía fuerte asimetría, así que se transformó a logaritmo antes de modelar. Se compararon cinco modelos con validación cruzada de 5 folds: una base lineal, árboles de decisión en dos profundidades y random forests en dos tamaños.</p>
+
+    <p class="highlight" data-lang-only="en"><strong>The decision that mattered was not the leaderboard.</strong> The 100-tree forest reached <strong>R² 0.57</strong>; the 50-tree forest reached <strong>0.56</strong> and trained in <strong>half the time</strong> — 266 s against 519 s. In an operating environment, that is what decides which model actually gets deployed.</p>
+    <p class="highlight" data-lang-only="es"><strong>La decisión que importó no fue el ranking.</strong> El bosque de 100 árboles alcanzó <strong>R² 0,57</strong>; el de 50 alcanzó <strong>0,56</strong> y entrenó en <strong>la mitad del tiempo</strong> — 266 s contra 519 s. En un entorno operativo, eso decide qué modelo se pone en producción.</p>
+
+    <dl class="specs">
+      <div><dt data-lang-only="en">Scale</dt><dt data-lang-only="es">Escala</dt><dd>174,815 → 125,018</dd></div>
+      <div><dt data-lang-only="en">Target</dt><dt data-lang-only="es">Objetivo</dt><dd>GOR / RGP · log</dd></div>
+      <div><dt data-lang-only="en">Validation</dt><dt data-lang-only="es">Validación</dt><dd>5-fold CV</dd></div>
+      <div><dt data-lang-only="en">Best R²</dt><dt data-lang-only="es">Mejor R²</dt><dd>0.57</dd></div>
+      <div><dt data-lang-only="en">Deployed</dt><dt data-lang-only="es">Elegido</dt><dd>0.56 · 50 trees</dd></div>
+    </dl>
+
+    <p class="note" data-lang-only="en"><strong>Why there is no repository link:</strong> the dataset included operator production and drilling records, and it is not mine to publish. <em>Not publishing another company's operational data is part of the job.</em> The public, reproducible version is rebuilt on open data below.</p>
+    <p class="note" data-lang-only="es"><strong>Por qué no hay link al repositorio:</strong> el dataset incluía registros operativos de producción y perforación, y no es mío para publicar. <em>No publicar datos operativos de otra empresa es parte del trabajo.</em> La versión pública y reproducible está reconstruida sobre datos abiertos, abajo.</p>
+  </article>
+
+  <article class="feature">
+    <div class="feature-head">
+      <span class="badge" data-lang-only="en">Public · open data</span>
+      <span class="badge" data-lang-only="es">Público · datos abiertos</span>
+      <span class="badge">CC-BY-4.0</span>
+    </div>
+    <h3><a href="https://github.com/Lucas-Arteaga/well-production-data-mining" target="_blank" rel="noopener">well-production-data-mining</a></h3>
+    <p data-lang-only="en">CRISP-DM data mining over official Argentine per-well production data: business filters, percentile-based categorisation, a 20×20 Self-Organizing Map with KMeans over the SOM weights, and cluster profiling with radar charts.</p>
+    <p data-lang-only="es">Minería de datos con CRISP-DM sobre la producción oficial por pozo de Argentina: filtros de negocio, categorización por percentiles, un Mapa Auto-organizado de 20×20 con KMeans sobre los pesos del SOM, y perfilado de clusters con gráficos de radar.</p>
+    <p class="stack">Python · pandas · MiniSom · scikit-learn · Jupyter</p>
+  </article>
+
+  <article class="feature is-progress">
+    <div class="feature-head">
+      <span class="badge badge-live" data-lang-only="en">In progress</span>
+      <span class="badge badge-live" data-lang-only="es">En curso</span>
+      <span class="badge">Secretaría de Energía · CC-BY-4.0</span>
+    </div>
+    <h3 data-lang-only="en">well-production-analytics</h3>
+    <h3 data-lang-only="es">well-production-analytics</h3>
+    <p data-lang-only="en">A reproducible production analytics pipeline over Argentina's official open well-production dataset: validated ingestion of multi-year files, data-quality reporting, basin and operator profiling, and GOR modelling. Public data, so anyone can run it — and nothing confidential to hide behind.</p>
+    <p data-lang-only="es">Un pipeline reproducible de analítica de producción sobre el dataset oficial abierto de producción por pozo de Argentina: ingesta validada de archivos multi-año, reporte de calidad de datos, perfilado por cuenca y operadora, y modelado de RGP. Datos públicos, así que cualquiera puede correrlo — y nada confidencial que esconder.</p>
+  </article>
+</section>
+
+<!-- ============================ CERTIFICATIONS ============================ -->
+<section class="section" id="certifications">
+  <h2><span data-lang-only="en">Certifications</span><span data-lang-only="es">Certificaciones</span></h2>
+  <p class="section-lede" data-lang-only="en"><strong>270 certified hours</strong> across petroleum data science, industrial operations, industrial software and technical communication.</p>
+  <p class="section-lede" data-lang-only="es"><strong>270 horas certificadas</strong> entre ciencia de datos aplicada a petróleo, operación industrial, software industrial y comunicación técnica.</p>
+
+  <ul class="certs">
+    <li><span class="c-hours">96 h</span><span class="c-body"><strong><span data-lang-only="en">Gas Plant Operator</span><span data-lang-only="es">Operador de Plantas de Gas</span></strong> — Instituto Tecnológico de la Patagonia · 2024 · <span class="c-ok" data-lang-only="en">certificate 810/24</span><span class="c-ok" data-lang-only="es">certificado 810/24</span></span></li>
+    <li><span class="c-hours">48 h</span><span class="c-body"><strong><span data-lang-only="en">Data Science for Petroleum Engineers: first steps into AI</span><span data-lang-only="es">Fundamentos en Ciencias de Datos para Ingenieros en Petróleo: primeros pasos hacia la IA</span></strong> — Fundación Sadosky &amp; Fundación YPF · 2025 · <span class="c-gold" data-lang-only="en">special mention</span><span class="c-gold" data-lang-only="es">mención especial</span></span></li>
+    <li><span class="c-hours">48 h</span><span class="c-body"><strong><span data-lang-only="en">AI Automation career track — 13 weeks, includes the advanced-level course</span><span data-lang-only="es">Carrera de AI Automation — 13 semanas, incluye el curso de nivel avanzado</span></strong> — Coderhouse · 2026</span></li>
+    <li><span class="c-hours">30 h</span><span class="c-body"><strong><span data-lang-only="en">Microsoft Excel, advanced level</span><span data-lang-only="es">Microsoft Excel, nivel avanzado</span></strong> — UTEPSA Postgrado · 2025 · <span class="c-ok" data-lang-only="en">certificate 12321</span><span class="c-ok" data-lang-only="es">certificado 12321</span></span></li>
+    <li><span class="c-hours">24 h</span><span class="c-body"><strong><span data-lang-only="en">SAP and Excel integration with script</span><span data-lang-only="es">Integración de SAP y Excel con script</span></strong> — UTEPSA Postgrado · 2025 · <span class="c-ok" data-lang-only="en">certificate 12405</span><span class="c-ok" data-lang-only="es">certificado 12405</span></span></li>
+    <li><span class="c-hours">12 h</span><span class="c-body"><strong>OpenWells, Data Analyzer &amp; PROFILE</strong> — Next Well Solutions / Halliburton Landmark · 2026 · <span class="c-ok" data-lang-only="en">verifiable code NWS-2026-016</span><span class="c-ok" data-lang-only="es">código verificable NWS-2026-016</span></span></li>
+    <li><span class="c-hours">12 h</span><span class="c-body"><strong><span data-lang-only="en">Public speaking and Storytelling</span><span data-lang-only="es">Oratoria e Introducción al Storytelling</span></strong> — Universidad de Buenos Aires, Facultad de Derecho · 2024 · <span class="c-ok">Res. (D) 5849/24</span></span></li>
+  </ul>
+</section>
+
+<!-- ============================ HOW I WORK ============================ -->
+<section class="section" id="how">
+  <h2><span data-lang-only="en">How I work</span><span data-lang-only="es">Cómo trabajo</span></h2>
+  <ol class="principles">
+    <li>
+      <h3 data-lang-only="en">Validate before it gets built</h3><h3 data-lang-only="es">Validar antes de construir</h3>
+      <p data-lang-only="en">A deviation caught on a data sheet costs a revision. The same deviation caught on the shop floor costs a scrapped part, a delayed delivery and an angry operator. The earlier the check, the cheaper the fix — true of data and of valves.</p>
+      <p data-lang-only="es">Una desviación detectada en el data sheet cuesta una revisión. La misma detectada en el taller cuesta una pieza rechazada, una entrega demorada y una operadora enojada. Cuanto más temprano el control, más barata la corrección — vale para datos y para válvulas.</p>
+    </li>
+    <li>
+      <h3 data-lang-only="en">Clean the data before touching the model</h3><h3 data-lang-only="es">Limpiar los datos antes de tocar el modelo</h3>
+      <p data-lang-only="en">48,533 of 174,815 records were non-physical. Modelling on top of them would have produced a confident answer to a question nobody asked.</p>
+      <p data-lang-only="es">48.533 de 174.815 registros eran no físicos. Modelar encima de eso habría dado una respuesta segura a una pregunta que nadie hizo.</p>
+    </li>
+    <li>
+      <h3 data-lang-only="en">Report the cost of a decision, not just the number</h3><h3 data-lang-only="es">Reportar el costo de una decisión, no sólo el número</h3>
+      <p data-lang-only="en">0.57 versus 0.56 is noise. Doubling the training time is not. That comparison is what turns a metric into a decision.</p>
+      <p data-lang-only="es">0,57 contra 0,56 es ruido. Duplicar el tiempo de entrenamiento no lo es. Esa comparación es la que convierte una métrica en una decisión.</p>
+    </li>
+    <li>
+      <h3 data-lang-only="en">Say what does not work</h3><h3 data-lang-only="es">Decir lo que no funciona</h3>
+      <p data-lang-only="en">My dataset was a snapshot with no bottom-hole pressure and no petrophysics — so the model describes wells, it does not predict them. Knowing which of the two you have is most of the job.</p>
+      <p data-lang-only="es">Mi dataset era una foto sin presión de fondo ni petrofísica — así que el modelo describe pozos, no los predice. Saber cuál de las dos cosas tenés es la mayor parte del trabajo.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="section section-contact" id="contact">
+  <h2><span data-lang-only="en">Let's talk</span><span data-lang-only="es">Hablemos</span></h2>
+  <p class="section-lede" data-lang-only="en">Open to Petroleum Engineering, production data, well operations and technical automation roles.</p>
+  <p class="section-lede" data-lang-only="es">Abierto a posiciones de Ingeniería en Petróleo, datos de producción, operaciones de pozo y automatización técnica.</p>
+  <div class="cta">
+    <a class="btn btn-primary" href="https://www.linkedin.com/in/lucas-arteaga-/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="mailto:larteaga@fi.uba.ar">larteaga@fi.uba.ar</a>
+    <a class="btn" href="https://github.com/Lucas-Arteaga" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Lucas Arteaga · <span data-lang-only="en">Buenos Aires, Argentina</span><span data-lang-only="es">Buenos Aires, Argentina</span></p>
+  <p class="footer-note" data-lang-only="en">Hand-built static site — no framework, no trackers.</p>
+  <p class="footer-note" data-lang-only="es">Sitio estático hecho a mano — sin framework, sin rastreadores.</p>
+</footer>
+
+<script src="app.js" defer></script>
 </body>
 </html>
